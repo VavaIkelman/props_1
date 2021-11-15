@@ -1,25 +1,18 @@
+/* eslint-disable react/jsx-no-undef */
 import logo from './logo.svg';
 import './App.css';
+import Stars from './components/Stars';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+      <div>
+        <Stars count={1} />,
+        <Stars count={2} />,
+        <Stars count={4} />,
+        <Stars count={5} />,
+        <Stars count={7} />,
+      </div> 
+    );
 }
 
 export default App;
